@@ -52,6 +52,7 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 Yui_Gbot_IMG = "https://telegra.ph/file/f73506e09900f96a9c16e.png"
+GSTART_IMG = "https://telegra.ph/file/213a05719a33e0e504cf9.gif"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -154,7 +155,7 @@ def start(bot: Bot, update: Update, args: List[str]):
     else:
         
         update.effective_message.reply_video(
-                Yui_Gbot_IMG)
+                GSTART_IMG)
         
         update.effective_message.reply_text("i'm Here 😊\n⚙️All Systems ONLiNE ❄️\n🌀 PT Server ✓\n✨ Thanks for Adding Me! ✨")
             
