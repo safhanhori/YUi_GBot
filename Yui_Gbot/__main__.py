@@ -153,7 +153,10 @@ def start(bot: Bot, update: Update, args: List[str]):
 
     else:
         
-        update.effective_message.reply_text("i'm Here 😊\n⚙️All Systems ONLiNE ❄️\n🌀 PT Server ✓\n✨ Thanks for Adding Me! ✨"
+        update.effective_message.reply_video(
+                Yui_Gbot_IMG)
+        
+        update.effective_message.reply_text("i'm Here 😊\n⚙️All Systems ONLiNE ❄️\n🌀 PT Server ✓\n✨ Thanks for Adding Me! ✨")
             
 
 
