@@ -154,9 +154,8 @@ def start(bot: Bot, update: Update, args: List[str]):
     else:
         update.effective_message.reply_photo(
                 Yui_Gbot_IMG)
-        update.effective_message.reply_text("i'm Here 😊\n⚙️All Systems ONLiNE ❄️\n🌀 PT Server ✓\n<b>🕗 Alive Time:</b> <code>{}</code>\n✨ Thanks for Adding Me! ✨"
-            format(uptime),
-            parse_mode=ParseMode.HTML
+        update.effective_message.reply_text("i'm Here 😊\n⚙️All Systems ONLiNE ❄️\n🌀 PT Server ✓\n✨ Thanks for Adding Me! ✨"
+            
 
 
 def send_start(bot, update):
