@@ -140,53 +140,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     
     
         
-    try:
-        user_member = chat.get_member(user.id)
-        if user_member.status == 'administrator':
-            result = requests.post(f"https://api.telegram.org/bot{TOKEN}/getChatMember?chat_id={chat.id}&user_id={user.id}")
-            result = result.json()["result"]
-            if "custom_title" in result.keys():
-                custom_title = result['custom_title']
-                text += f"\nThis user holds the title <b>{custom_title}</b> here."
-    except BadRequest:
-        pass
-
-    disaster_level_present = False
-
-    if user.id == OWNER_ID:
-        text += "\n😎The Disaster level of this person is 'LEGEND'."
-        disaster_level_present = True
-    elif user.id in DEV_USERS:
-        text += "\n🔥This member is one of 'Hero Association'."
-        disaster_level_present = True
-    elif user.id in SUDO_USERS:
-        text += "\n🔥The Disaster level of this person is 'Dragon'."
-        disaster_level_present = True
-    elif user.id in SUPPORT_USERS:
-        text += "\n🔥The Disaster level of this person is 'HACKER'."
-        disaster_level_present = True
-    elif user.id in TIGER_USERS:
-        text += "\n🔥The Disaster level of this person is 'Tiger'."
-        disaster_level_present = True
-    elif user.id in WHITELIST_USERS:
-        text += "\n🔥The Disaster level of this person is 'Wolf'."
-        disaster_level_present = True
-
-    if disaster_level_present:
-        text += ' [<a href="http://t.me/{}?start=disasters">?</a>]'.format(bot.username)
-
-    text += "\n"
-    for mod in USER_INFO:
-        if mod.__mod_name__ == "Users":
-            continue
-
-        try:
-            mod_info = mod.__user_info__(user.id)
-        except TypeError:
-            mod_info = mod.__user_info__(user.id, chat.id)
-        if mod_info:
-            text += "\n" + mod_info
-
+    #yaha per d level tha bsdk draj
     
     
     
