@@ -125,7 +125,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     text += f"\n✦ Permanent user link: {mention_html(user.id, 'link')}"
 
     num_chats = sql.get_user_num_chats(user.id)
-    text += f"\n┖━─━─「GᖇOᑌᑭ COᑌᑎT <code>{num_chats}</code>」"
+    text += f"\n┖━─━─「GᖇOᑌᑭ COᑌᑎT」 <code>{num_chats}</code>"
       
     
     
@@ -139,7 +139,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     
     
     
-
+        
     try:
         user_member = chat.get_member(user.id)
         if user_member.status == 'administrator':
@@ -187,8 +187,14 @@ def info(bot: Bot, update: Update, args: List[str]):
         if mod_info:
             text += "\n" + mod_info
 
-    update.effective_message.reply_text(text, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
-
+    
+    
+    
+    #DP Pic
+    
+    
+    
+    
 
 @run_async
 @user_admin
