@@ -137,6 +137,15 @@ def __user_info__(user_id):
 
     return text
 
+#add
+__help__ = """
+ - /bl <reason>: blacklist user.
+ - /unbl unblacklist user.
+ - /blusers list of blacklist user
+NOTE: THIS IS EXTRA Module FOR NOW ON BETA MODE :)
+"""
+
+
 
 BL_HANDLER = CommandHandler("ignore", bl_user, pass_args=True)
 UNBL_HANDLER = CommandHandler("notice", unbl_user, pass_args=True)
@@ -146,5 +155,5 @@ dispatcher.add_handler(BL_HANDLER)
 dispatcher.add_handler(UNBL_HANDLER)
 dispatcher.add_handler(BLUSERS_HANDLER)
 
-__mod_name__ = "BLACKLISTING USERS"
+__mod_name__ = "Blacklist 🚷"
 __handlers__ = [BL_HANDLER, UNBL_HANDLER, BLUSERS_HANDLER]
