@@ -145,7 +145,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="☺️Help",
                                                                        callback_data="help_back".format(bot.username)),
                                                                                    InlineKeyboardButton(text="Support Group 💬",
-                                                                       url="t.me/Net_SHELL")],
+                                                                       url="t.me/Yui_Official")],
                                                                                    [InlineKeyboardButton(text="Add Me 🔰",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="improve Me 🧲",
