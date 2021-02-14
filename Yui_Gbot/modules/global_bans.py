@@ -94,7 +94,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     message.reply_text("😈 #GBAN Time Bro 🔥")
 
     banner = update.effective_user  # type: Optional[User]
-    send_to_list(bot, SUDO_USERS + SUPPORT_USERS + GBAN_LOGS,
+    send_to_list(bot, SUDO_USERS + SUPPORT_USERS + LOGGER,
                  "<b>Global Ban</b>" \
                  "\n#GBAN" \
                  "\n<b>Status:</b> <code>Enforcing</code>" \
