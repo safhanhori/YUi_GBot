@@ -2,8 +2,6 @@ import html
 from io import BytesIO
 from typing import Optional, List
 
-from Yui_Gbot import dispatcher, GBAN_LOGS
-
 from telegram import Message, Update, Bot, User, Chat, ParseMode
 from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
@@ -96,7 +94,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     message.reply_text("😈 #GBAN Time Bro 🔥")
 
     banner = update.effective_user  # type: Optional[User]
-    send_to_list(bot, SUDO_USERS + SUPPORT_USERS + GBAN_LOGS,
+    send_to_list(bot, SUDO_USERS + SUPPORT_USERS,
                  "<b>Global Ban</b>" \
                  "\n#GBAN" \
                  "\n<b>Status:</b> <code>Enforcing</code>" \
