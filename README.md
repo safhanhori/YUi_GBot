@@ -25,4 +25,4 @@ The Support group can be reached out to at [Net_SHELL](https://t.me/Net_SHELL), 
 
 
 
-https://heroku.com/deploy?template=https://github.com/NetSHELL-Team/YUi_GBot
+
