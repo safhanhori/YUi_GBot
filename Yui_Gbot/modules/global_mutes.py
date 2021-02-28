@@ -282,7 +282,7 @@ def gmutestat(bot: Bot, update: Update, args: List[str]):
 
 
 def __stats__():
-    return "{} gmuted users.".format(sql.num_gmuted_users())
+    return "{}<b>» Gmuted Users.</b>\n".format(sql.num_gmuted_users())
 
 
 def __user_info__(user_id):
