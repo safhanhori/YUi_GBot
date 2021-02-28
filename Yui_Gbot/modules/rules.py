@@ -75,7 +75,7 @@ def clear_rules(bot: Bot, update: Update):
 
 
 def __stats__():
-    return f"<b>»{sql.num_chats()} Chats Have Rules Set.</b>\n"
+    return f"{sql.num_chats()} Chats Have Rules Set.\n"
 
 
 def __import_data__(chat_id, data):
