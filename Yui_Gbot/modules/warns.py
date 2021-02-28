@@ -366,8 +366,8 @@ def set_warn_strength(bot: Bot, update: Update, args: List[str]):
 
 
 def __stats__():
-    return (f"{sql.num_warns()} overall warns, across {sql.num_warn_chats()} chats.\n"
-            f"{sql.num_warn_filters()} warn filters, across {sql.num_warn_filter_chats()} chats.")
+    return (f"{sql.num_warns()} » overall warns, across {sql.num_warn_chats()} chats.\n"
+            f"{sql.num_warn_filters()} » warn filters, across {sql.num_warn_filter_chats()} chats.")
 
 
 def __import_data__(chat_id, data):
@@ -401,7 +401,7 @@ be a sentence, encompass it with quotes, as such: `/addwarn "very angry" This is
  - /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
 """
 
-__mod_name__ = "WARNINGS"
+__mod_name__ = "Warning ⛔️"
 
 WARN_HANDLER = CommandHandler("warn", warn_user, pass_args=True, filters=Filters.group)
 RESET_WARN_HANDLER = CommandHandler(["resetwarn", "resetwarns"], reset_warns, pass_args=True, filters=Filters.group)
