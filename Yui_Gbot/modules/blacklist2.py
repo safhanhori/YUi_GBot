@@ -352,7 +352,7 @@ def __chat_settings__(chat_id, user_id):
 	return "There are `{} `blacklisted stickers.".format(blacklisted)
 
 def __stats__():
-	return "<b>» {} BLackList Stickers, Across </b>{}<B> Chats.</B>\n".format(sql.num_stickers_filters(), sql.num_stickers_filter_chats())
+	return "<b>» {} BlackList Stickers, Across </b>{}<B> Chats.</B>\n".format(sql.num_stickers_filters(), sql.num_stickers_filter_chats())
 
 __help__ = """
 Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, the message will be deleted immediately.
@@ -367,7 +367,7 @@ Note:
  - `<sticker link>` can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message.
 """
 
-__mod_name__ = "S BLACKLIST"
+__mod_name__ = "S Blacklist ✨"
 
 BLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler("blsticker", blackliststicker, pass_args=True, admin_ok=True)
 ADDBLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler("addblsticker", add_blackliststicker)
