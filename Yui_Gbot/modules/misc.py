@@ -176,7 +176,7 @@ def markdown_help(bot: Bot, update: Update):
 @run_async
 @sudo_plus
 def stats(bot: Bot, update: Update):
-    stats = "Current stats:\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "⌌⑉⑉⑉<b>R-T iNFo:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r'(\d+)', r'<code>\1</code>', stats)
     update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
 
