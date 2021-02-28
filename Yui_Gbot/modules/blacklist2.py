@@ -352,7 +352,7 @@ def __chat_settings__(chat_id, user_id):
 	return "There are `{} `blacklisted stickers.".format(blacklisted)
 
 def __stats__():
-	return "{}<b>» BLackList Stickers, Across </b>{} Chats.\n\n".format(sql.num_stickers_filters(), sql.num_stickers_filter_chats())
+	return "<b>» {} BLackList Stickers, Across </b>{} Chats.\n\n".format(sql.num_stickers_filters(), sql.num_stickers_filter_chats())
 
 __help__ = """
 Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, the message will be deleted immediately.
