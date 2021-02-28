@@ -261,7 +261,7 @@ if is_module_loaded(FILENAME):
 
 
     def __stats__():
-        return f"{sql.num_disabled()} disabled items, across {sql.num_chats()} chats."
+        return f"{sql.num_disabled()}<b>» Disabled iTems, Across </b>{sql.num_chats()}<b> Chats.</b>\n"
 
 
     def __migrate__(old_chat_id, new_chat_id):
