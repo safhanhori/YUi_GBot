@@ -367,7 +367,7 @@ def set_warn_strength(bot: Bot, update: Update, args: List[str]):
 
 def __stats__():
     return (f"{sql.num_warns()}<b>» Warns, Across</b>{sql.num_warn_chats()}<b>Chats</b>\n\n"
-            f"{sql.num_warn_filters()}<b>» Warn Filters, Across {sql.num_warn_filter_chats()}<b>Chats</b>")
+            f"{sql.num_warn_filters()}<b>» Warn Filters, Across </b>{sql.num_warn_filter_chats()}<b>Chats</b>")
 
 
 def __import_data__(chat_id, data):
