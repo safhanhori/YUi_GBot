@@ -17,6 +17,10 @@ Can be found on telegram as [Yui_GBot](https://t.me/Yui_GBot).
 
 The Support group can be reached out to at [ＹＵｉ ◈ Sᴜᴘᴘᴏʀᴛ](https://t.me/Yui_Officiall), where you can ask for help about [Yui](https://t.me/Yui_GBot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
+#Note:
+
+Heroku Deploy & Self Host Deploy Coming Soon On /Apr15.2021
+
 
 
 
