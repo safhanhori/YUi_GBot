@@ -21,7 +21,7 @@ The Support group can be reached out to at [ＹＵｉ ◈ Sᴜᴘᴘᴏʀᴛ](ht
 # Note:
 
 Heroku Deploy & Self Host Deploy Coming Soon On /Apr15.2021
-Any other questions to Join  ◈ Sᴜᴘᴘᴏʀᴛ](https://t.me/Yui_Officiall), where you can ask for help about [Yui](https://t.me/Yui_GBot)
+Any other questions to Join  [ＹＵｉ ◈ Sᴜᴘᴘᴏʀᴛ](https://t.me/Yui_Officiall), where you can ask for help about [Yui](https://t.me/Yui_GBot)
 
 
 
