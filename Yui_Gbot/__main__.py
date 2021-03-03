@@ -31,7 +31,7 @@ Hyy {}, My Name is {}
 i am a group management bot I can help you to manage your group
 You can find my list of available commands with /help
 
-Developer By- [ꋊꏂ꓄-ꇙꁝꏂ꒒꒒ ⚡️](https://t.me/Net_SHELL)
+Developer By- [ 『DC』ᵀᵉᵃᵐ★ᎳᎪᏒᏒᎥᎾᏒ★⚡️](https://t.me/『DC』ᵀᵉᵃᵐ★ᎳᎪᏒᏒᎥᎾᏒ★)
 
 """
 
@@ -51,8 +51,8 @@ Hello! My Name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-Yui_Gbot_IMG = "https://telegra.ph/file/f73506e09900f96a9c16e.png"
-GSTART_IMG = "https://telegra.ph/file/8051350a1afea2c772dd5.mp4"
+Yui_Gbot_IMG = "https://telegra.ph/file/655a94dd9dac006eff5fb.jpg"
+GSTART_IMG = ""
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
